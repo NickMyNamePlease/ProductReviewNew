@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+/*Фільтри, кнопки*/
+:root {
+    --color-bg1: #dbf8d3;
+    --color-bg2: #bef3eb;
+}
+.background {
+    background-color: var(--color-bg1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.review-quantity {
+    color: darkgreen;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.filter {
+    background-color: green;
+    border-color: black;
+    --bs-btn-hover-bg: darkgreen;
+    --bs-btn-active-bg: darkgreen;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.filter-body {
+    background-color: var(--color-bg2);
 }
 
-.App-link {
-  color: #61dafb;
+
+/* NavBar */
+.title {
+    color: lawngreen;
+    font-style: italic;
+    font-size: large;
+    text-decoration: none;
+    margin-left: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Burger-menu */
+
+
+
+/*Search*/
+.search {
+    border-color: darkgreen;
+    width: 94%;
 }
+
+/* Any Page structure */
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content-container {
+    flex-grow: 1;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #2b2b2b;
+    color: white;
+    width: 100%;
+}
+
+body {
+    background-color: honeydew;
+}
+
+/* Cursor */
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Card-Item */
+.card-item {
+    border-color: green;
+    border-width: 4px;
+}
+
+.product-card {
+    width: 55rem;
+}
+
+/* Pagination */
+.pagination .page-item.active .page-link {
+    background-color: darkgreen;
+    border-color: darkgreen;
+}
+
+/*========================================================================*/
+
+@media screen and (max-width: 992px) {
+    .button-margin {
+        margin-top: 10px;
+    }
+    .bg-mobile {
+        background: var(--color-bg1);
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .footer {
+        width: 100%;
+    }
+    .bg-mobile {
+        background: var(--color-bg1);
+    }
+}
+
+@media screen and (max-width: 576px){
+    .search {
+        width: 94%;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .bg-mobile {
+        background: var(--color-bg1);
+    }
+}
+
+
